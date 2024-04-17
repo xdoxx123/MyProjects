@@ -36,7 +36,7 @@ while Enabled do
 
 	local function UpdateEsp()
 		for _,player in ipairs(game.Players:GetPlayers()) do
-			if  player.Character and player.Character:FindFirstChild("HumanoidRootPat") then
+			if  player.Character  then
 				CreateESP(player)
 			end
 		end
